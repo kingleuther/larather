@@ -9,7 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
-<body>
+<body  ng-controller = "AppController as ac" ng-app = "App">
     @include('inc.navbar')
     <div class = "container" id = "maincontent">
         @if(Request::is('/'))
@@ -23,4 +23,6 @@
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script> 
+<script type="text/javascript" src="{{ asset('js/album/album.js') }}"></script>     
 </html>

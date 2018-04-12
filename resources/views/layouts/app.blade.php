@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+ 
 </head>
 <body>
     @include('inc.navbar')
@@ -26,6 +27,8 @@
             @endif              
             </div>
         </div>
-    </div>  
+    </div> 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script> 
+<script type="text/javascript" src="{{ asset('js/app/app.js') }}"></script>     
 </html>
