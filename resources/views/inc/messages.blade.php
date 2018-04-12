@@ -6,9 +6,9 @@
     @endforeach
 @endif
 
-@if(session('success'))
+@if(app('request')->input('data'))
     <div class = "alert alert-success">
-        {{session('success')}}
+    Message Sent    
     </div>
 @endif
 

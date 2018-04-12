@@ -26,8 +26,10 @@ class MessagesController extends Controller
         $message->message = $req->input('message');
         //save message
         $message->save();
+        logger('submit');
         //redirect
-        return redirect('/')->with('success', 'Message Sent');
+        // return redirect('/')->with('success', 'Message Sent');
+        return response()->json(true);
     }
 
     public function getMessages(){
